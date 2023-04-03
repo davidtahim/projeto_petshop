@@ -1,0 +1,218 @@
+@font-face {
+    font-family: Roboto;
+    src: url(/fonte/Roboto-Regular.ttf);
+    font-family: Roboto Negrito;
+    src: url(/fonte/Roboto-Bold.ttf);
+}
+/* Trabalhando com os títulos*/
+h1 {
+    color: #c0262c;
+    font-size: 2.5em;
+    font-family: Roboto Negrito;
+    border-bottom: #c0262c thin solid;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.75em;
+    background: url(/Multimidia/back-bolinha.gif) #c0262c repeat top center;
+    color: white;
+    letter-spacing: 0.1em;
+    padding: 10px;
+    width: 320px;
+}
+
+/* Trabalhando com o formulário */
+
+form {
+    background-color: #999;
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 0 15px;
+}
+input[type="submit"]{
+    background-color: #c0262c;
+    background: linear-gradient(to bottom, #6b1516 0%, #c0262c 30%,#c0262c 70%, #6b1516 100%);
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    color: white;
+    padding: 10px 30px;
+    margin: 20px 0;
+    text-shadow: 2px 2px 5px black ;
+    cursor: pointer;
+}
+
+input#nome, input#email {
+    background-color: transparent;
+    border: none;
+    border-bottom: black solid 1px;
+    font-size: 1.2em;
+    color: white;
+    width: 800px;
+}
+
+input#nome::placeholder,input#email::placeholder {
+    color: white;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    float: left;
+    width: 60px;
+}
+
+/* Trabalhando com o texto */
+
+p {
+    font-size: 1.1em;
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+p:first-line {
+    font-size: 1.17em;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+hr {
+    border-color: #c0262c;
+}
+
+body {
+    font-family: Roboto;
+}
+/* Trabalhando a página curiosidades*/
+
+#curiosidades h2{
+    background-color: #c0262c;
+    background-image: url(/Multimidia/importante-saber.jpg), url(/Multimidia/back-bolinha.gif);
+    background-repeat: no-repeat, repeat;
+    background-position: center right,center center;
+    color: white;
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+    width: 470px;
+    padding: 61px 400px 61px 100px;
+}
+
+#curiosidades figcaption {
+    background-color: #c0262c;
+    padding: 10px 10px;
+    color: white;
+    font-size: 1.5em;
+}
+
+#curiosidades figure {
+    border: #c0262c solid thin;
+    border-radius: 35px 35px 0 0;
+    padding: 20px 0 0;
+    text-align: center;
+}
+
+#curiosidades ul li {
+    list-style-type: none;
+    list-style-image: url(/Multimidia/ossinho.png);
+    list-style-position: inside;
+    margin: 30px 0;
+    
+}
+
+#curiosidades dt {
+    color: white;
+    background-color: #c0262c;
+    padding: 10px;
+}
+
+#curiosidades dd {
+    border: #c0262c solid thin;
+    border-radius: 0 0 25px 25px;
+    margin-top: -3px;
+    margin-bottom: 30px;
+    padding: 20px 20px 0;
+}
+#curiosidades ol {
+    list-style-type: none;
+    white-space: pre;
+    line-height: 0.9em;
+    /*definir contador*/
+    counter-reset: contador;
+} 
+#curiosidades ol li::before {
+    color: #999;
+    counter-increment: contador;
+    content: "Questão " counter(contador) " \00BB " ;
+}
+
+#curiosidades ul li a {
+    text-decoration: none;
+    color: #c0262c;
+    font-weight: bold;
+    padding: 10px;
+}
+#curiosidades ul li a:hover {
+    text-decoration: underline;
+}
+
+#curiosidades dd a[target="_blank"] {
+    text-decoration: none;
+    color: #c0262c;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+
+}
+#curiosidades dd a[target="_blank"]:hover {
+    text-decoration: underline;
+}
+
+#curiosidades dd a[href="#topo"] {
+    text-decoration: none;
+    font-variant: normal;
+    color: #c0262c;
+    font-weight: bold;
+    padding: 10px 0 10px 30px;
+    background:url("/Multimidia/seta-voltar.png") no-repeat left center;
+}
+
+#curiosidades dd a[href="#topo"]:hover {
+    text-decoration: underline;
+    background:url("/Multimidia/seta-voltar-hover.png") no-repeat left center;
+}
+
+/* Trabalhando a página produtos*/
+
+#produtos table {
+    width: 600px;
+    margin: 50px auto 30px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#produtos th, #produtos td {
+    border: black solid thin ;
+    padding: 5px;  
+}
+
+#produtos caption {
+    background-color: #999;
+    color: white;
+    padding: 15px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    caption-side: top;
+}
+
+#produtos td[colspan]{
+    font-style: italic;
+    font-weight: bold;
+    color: #999;
+}
+
+#produtos tr:hover{
+    background-color:#feff76;
+}
