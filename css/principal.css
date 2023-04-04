@@ -216,3 +216,75 @@ body {
 #produtos tr:hover{
     background-color:#feff76;
 }
+
+/* Início do banho e tosa  */
+
+#banhoetosa fieldset {
+    background-color: white;
+    border-radius: 0 15px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+#banhoetosa fieldset legend {
+    background-color: #c0262c;
+    color:white;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    padding: 10px;
+    margin-left: -13px;
+}
+
+#banhoetosa fieldset label {
+    display: block;
+    margin-top: 5px;
+    float: left;
+    width: 115px;
+}
+
+#banhoetosa fieldset input[type="text"], 
+#banhoetosa fieldset input[type="email"], 
+#banhoetosa fieldset input[type="datetime-local"] {
+    border: none;
+    border-bottom: black solid 1px;
+    font-size: 1.2em;
+    color: #000000;
+    width: 770px;
+}
+
+#banhoetosa textarea#q_obs {
+    border: none;
+    border: black solid 1px;
+    font-size: 1.2em;
+    color: black;
+    width: 770px;
+    resize: none;
+    height: 100px;
+}
+
+#banhoetosa p {
+    float: left;
+}
+
+#banhoetosa p::first-line {
+    font-size: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+}
+
+.labelsimples {
+    display: inline;
+    float: none;
+}
+
+#banhoetosa main h2 {
+    background: #fef84f url(/Multimidia/postit.jpg) no-repeat top left;
+    color: #000000;
+    padding: 35px;
+    width: 207px;
+    height: 115px;
+    font-size: 1.3em;
+    letter-spacing: 0.07em;
+   
+}
