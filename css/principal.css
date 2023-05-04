@@ -88,7 +88,7 @@ body {
 }
 /* Trabalhando a página curiosidades*/
 
-#curiosidades h2{
+#curiosidades main h2{
     background-color: #c0262c;
     background-image: url(/Multimidia/importante-saber.jpg), url(/Multimidia/back-bolinha.gif);
     background-repeat: no-repeat, repeat;
@@ -100,21 +100,21 @@ body {
     padding: 61px 400px 61px 100px;
 }
 
-#curiosidades figcaption {
+#curiosidades main figcaption {
     background-color: #c0262c;
     padding: 10px 10px;
     color: white;
     font-size: 1.5em;
 }
 
-#curiosidades figure {
+#curiosidades main figure {
     border: #c0262c solid thin;
     border-radius: 35px 35px 0 0;
     padding: 20px 0 0;
     text-align: center;
 }
 
-#curiosidades ul li {
+#curiosidades main ul li {
     list-style-type: none;
     list-style-image: url(/Multimidia/ossinho.png);
     list-style-position: inside;
@@ -122,43 +122,43 @@ body {
     
 }
 
-#curiosidades dt {
+#curiosidades main dt {
     color: white;
     background-color: #c0262c;
     padding: 10px;
 }
 
-#curiosidades dd {
+#curiosidades main dd {
     border: #c0262c solid thin;
     border-radius: 0 0 25px 25px;
     margin-top: -3px;
     margin-bottom: 30px;
     padding: 20px 20px 0;
 }
-#curiosidades ol {
+#curiosidades main ol {
     list-style-type: none;
     white-space: pre;
     line-height: 0.9em;
     /*definir contador*/
     counter-reset: contador;
 } 
-#curiosidades ol li::before {
+#curiosidades main ol li::before {
     color: #999;
     counter-increment: contador;
     content: "Questão " counter(contador) " \00BB " ;
 }
 
-#curiosidades ul li a {
+#curiosidades main ul li a {
     text-decoration: none;
     color: #c0262c;
     font-weight: bold;
     padding: 10px;
 }
-#curiosidades ul li a:hover {
+#curiosidades main ul li a:hover {
     text-decoration: underline;
 }
 
-#curiosidades dd a[target="_blank"] {
+#curiosidades main dd a[target="_blank"] {
     text-decoration: none;
     color: #c0262c;
     font-weight: bold;
@@ -166,11 +166,11 @@ body {
     display: inline-block;
 
 }
-#curiosidades dd a[target="_blank"]:hover {
+#curiosidades main dd a[target="_blank"]:hover {
     text-decoration: underline;
 }
 
-#curiosidades dd a[href="#topo"] {
+#curiosidades main dd a[href="#topo"] {
     text-decoration: none;
     font-variant: normal;
     color: #c0262c;
@@ -179,7 +179,7 @@ body {
     background:url("/Multimidia/seta-voltar.png") no-repeat left center;
 }
 
-#curiosidades dd a[href="#topo"]:hover {
+#curiosidades main dd a[href="#topo"]:hover {
     text-decoration: underline;
     background:url("/Multimidia/seta-voltar-hover.png") no-repeat left center;
 }
@@ -442,3 +442,29 @@ footer p, footer p::first-line, footer p a  {
     color: white;
     text-decoration: none;
 }
+
+/* Página Obrigado */
+
+#obrigado main p img {
+    float: left;
+    margin: 0 20px 20px 0;
+    padding: 10px;
+    border: solid #c0262c thin;
+    background-color: white;
+}
+
+#destaqueobrigado {
+    position: relative;
+    border: solid #c0262c 1px;
+    border-radius: 0 25px;
+    padding: 5px 25px;
+    margin: 20px 0;
+}
+
+#obrigado #lacinho {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    transform: rotate(30deg);
+}
+
